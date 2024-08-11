@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    margin-top: 0;
+    z-index: 1000;
+
+}
+.navbar{
+    width: 100%;
+}
+.container-fluid{
+  background-color: rgb(245, 226, 229);
+  z-index: 1000;
+
+
+}
+.logo{
+    width: 70px;
+}
+
+.nav-item a{
+    color: black;
+    font-size:1.1rem ;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+
+}
+.icon{
+    margin-right: 50px;
+}
+.icon i{
+    font-size: 1.2rem;
+}
+
+/* Home */
+.home{
+    margin-top: 0;
+    width: 100%;
+    overflow-x: hidden;
+    /* background-color: rgb(231, 208, 212); */
+    background-color:#fcf8f8 ;
+
+}
+.home img{
+    width: 100%;
+    height: 100vh;
+}
+.col-title{
+    margin-top: 40px;
+}
+.title{
+    text-align: center;
+    /* justify-content: center; */
+    margin-top: 130px;
+    width: 68%;
+    margin-left: 50px;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.title span{
+    color:rgb(248, 122, 143) ;
+}
+.title-btn{
+    margin-left: 160px;
+    margin-top: 30px;
+    width: 20%;
+    height: 40px;
+    outline: none;
+    border: none;
+    background-color: white;
+    color:rgb(248, 122, 143) ;
+    font-weight: 550;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+
+@media (max-width: 991px) {
+    .title {
+        font-size: 2.5rem;
+        width: 88%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .title-btn {
+     margin-left: 130px;    
+     /* margin-right: 20px; */
+     margin-bottom: 20px;
+    width: 30%;
+    }
+
+    .home img {
+        height: 70vh;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 767px) {
+    .title {
+        font-size: 2rem;
+        margin-top: 100px;
+    }
+
+    .title-btn {
+        width: 30%;
+        margin-left: 180px;
+        margin-right: auto;
+    }
+
+    .home img {
+        height: 80vh;
+        width: 50%;
+        margin-top: 20px;
+        width: 100%;
+        /* margin-left: 80px; */
+
+    }
+
+    .col-title {
+        margin-top: 20px;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.9rem;
+        margin-top: 80px;
+        width: 70%;
+    }
+
+    .title-btn {
+        width: 35%;
+        margin-left: 32%;
+    }
+
+    .home img {
+        height: 50%;
+    }
+}
+
+
+
+/* cardss */
+
+.card-image{
+    height: 50%;
+    width: 50%;
+    margin-left: 30%;
+
+}
+
+.card-title{
+    font-size: 1rem;
+    text-align: center;
+}
+
+.card-sub-title{
+   font-size: 0.9rem;
+   color:rgb(248, 122, 143) ;
+   text-align: center;
+   font-weight: 700;
+   margin-top: 10px;
+}
+.card{
+    background-color:#fcf8f8 ;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+    border: none;
+
+}
+.row{
+    margin-top: 50px;
+    margin-left: 7%;
+
+}  
+.btn{
+    width: 50%;
+    height: 40px;
+    outline: none;
+    border: none;
+    background-color: rgb(248, 122, 143);
+    color: white;
+    font-weight: 550;
+    margin-left: 22%;
+
+}
+.btn:hover{
+    background-color: white;
+    color:  rgb(248, 122, 143);
+}
+.card-text{
+    font-size: 0.9rem;
+    text-align: center;
+    font-weight: 750;
+    transition: 0.189s;
+
+}
+
+.card:hover{
+    transform: scale(0.96);
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+
+.pro-title{
+    text-align: center;
+    margin-top: 40px;
+    font-family: "Roboto", sans-serif;
+    font-size: 3.1rem;
+    
+}
+.pro-title span{
+   color: rgb(248, 122, 143);
+
+}
+
+@media (min-width: 576px) {
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+@media (min-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+@media (min-width: 992px) {
+    .product-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* arrivals */
+/* .arrivals{
+    height: 80vh;
+    background-color: rgb(245, 226, 229);
+    overflow: hidden;
+
+   
+
+}
+
+.card-arrival{
+    height: 50vh;
+    margin: 1rem;
+}
+.card-arrival img{
+    width: 70%;
+    height: auto;
+    margin-left: 40px;
+} */
+
